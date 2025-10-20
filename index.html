@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Endurance Solutions | Clean Mobility Retrofitting</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d1117;
+      color: #ffffff;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    .text-accent { color: #38bdf8; }
+
+    /* Hero Background */
+    .hero-background {
+      background: linear-gradient(180deg, rgba(13,17,23,0.95) 0%, rgba(13,17,23,0.7) 40%, rgba(13,17,23,0.95) 100%),
+                  url('Gemini_Generated_Image_xuqx66xuqx66xuqx.jpg') center center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    /* Header */
+    header {
+      transition: background-color 0.5s ease, box-shadow 0.5s ease, backdrop-filter 0.5s ease;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    header.scrolled {
+      background-color: rgba(13, 17, 23, 0.9);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      backdrop-filter: blur(8px);
+    }
+
+    /* Fade & Scale Animation */
+    .fade-section {
+      opacity: 0;
+      transform: scale(0.98);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .fade-section.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Smooth scroll bounce icon */
+    @keyframes bounce {
+      0%,20%,50%,80%,100%{transform:translateY(0);}
+      40%{transform:translateY(-10px);}
+      60%{transform:translateY(-5px);}
+    }
+    .scroll-down { animation: bounce 2s infinite; }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 p-6 border-b border-[#21262d]/50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight opacity-90 transition duration-300 hover:opacity-100">
+      <span class="text-white">ENDURANCE</span><span class="text-accent"> SOLUTIONS</span>
+    </h1>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero-background min-h-screen flex flex-col items-center justify-center text-center px-4 py-20 pt-32">
+  <div class="max-w-5xl mx-auto space-y-10 fade-section">
+    <p class="text-lg font-medium tracking-widest text-accent uppercase">
+      Clean Mobility | Renewable Energy | Infrastructure
+    </p>
+    <h2 class="text-5xl md:text-7xl font-extrabold leading-tight tracking-tighter">
+      <span class="block">Pioneering the Transition to</span> 
+      <span class="block text-accent">Zero-Emission Heavy Transport.</span>
+    </h2>
+    <p class="text-xl md:text-2xl text-gray-300 font-light max-w-4xl mx-auto">
+      We combine technology, finance, and operational expertise to accelerate the deployment of electric drivetrains across municipal and industrial fleets across Australia.
+    </p>
+  </div>
+  <div class="absolute bottom-10">
+    <a href="#teaser" class="text-accent scroll-down">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </a>
+  </div>
+</section>
+
+<!-- Our Purpose -->
+<section id="teaser" class="py-28 px-4 sm:px-6 lg:px-8 bg-[#161b22] border-t border-[#21262d] fade-section">
+  <div class="max-w-6xl mx-auto">
+    <!--<h3 class="text-xl font-medium tracking-widest text-gray-500 mb-6 uppercase text-center md:text-left">
+      Our Purpose
+    </h3>-->
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h4 class="text-4xl md:text-5xl font-extrabold leading-snug">
+          <span class="block">Delivering Sustainable Growth,</span>
+          <span class="text-accent">Decarbonizing Fleets.</span>
+        </h4>
+        <p class="mt-8 text-lg text-gray-400 leading-relaxed">
+          We specialize in the strategic <strong>retrofitting of existing heavy-duty vehicles</strong>—including trucks and essential services vehicles—to high-performance electric drivetrains. This ensures our partners can meet ambitious decarbonization targets efficiently and cost-effectively.
+        </p>
+      </div>
+      <div class="relative rounded-xl overflow-hidden shadow-2xl border border-[#21262d]">
+        <img src="charger_closeup.png" alt="Electric vehicle charger close-up" class="object-cover w-full h-full opacity-90 hover:opacity-100 transition duration-300">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project Spotlight -->
+<section id="project-spotlight" class="py-28 px-4 sm:px-6 lg:px-8 bg-[#0d1117] border-t border-[#21262d] fade-section">
+  <div class="max-w-6xl mx-auto">
+    <h3 class="text-xl font-medium tracking-widest text-accent mb-6 uppercase text-center">
+      Project Spotlight
+    </h3>
+    <h4 class="text-5xl font-extrabold leading-tight tracking-tighter text-center max-w-4xl mx-auto mb-16">
+      Partnering with a NSW Council to Retrofit a Heavy Vehicle Fleet
+    </h4>
+
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <img 
+          src="fleet_trucks_depot.png" 
+          alt="Electric refuse vehicles at a modern charging depot" 
+          class="rounded-xl shadow-2xl border border-[#38bdf8]/20 w-full object-cover"
+          onerror="this.onerror=null;this.src='https://placehold.co/1200x675/161b22/8b949e?text=Project+Image+Missing';"
+        >
+        <!--<p class="text-sm text-gray-500 mt-4 text-center italic">
+          Retrofitting municipal refuse vehicles to electric drivetrains with integrated charging infrastructure.
+        </p>-->
+      </div>
+
+      <div class="space-y-6">
+        <h5 class="text-3xl font-semibold leading-relaxed">
+          Real-World Solutions in Action.
+        </h5>
+        <ul class="space-y-4 text-lg text-gray-300">
+          <li><span class="text-accent mr-2">✓</span><strong>Retrofit Focus:</strong> Converting existing refuse vehicles to electric drivetrains — extending asset life while reducing emissions.</li>
+          <li><span class="text-accent mr-2">✓</span><strong>Infrastructure Integration:</strong> Deploying depot-based charging to support fleet operations.</li>
+          <li><span class="text-accent mr-2">✓</span><strong>Sustainability:</strong> Delivering measurable environmental benefits.</li>
+          <li><span class="text-accent mr-2">✓</span><strong>Regional Impact:</strong> Supporting local employment and Australia’s clean transport transition.</li>
+        </ul>
+        <!--<a href="#contact" class="inline-block px-8 py-3 mt-4 text-base font-semibold bg-accent text-gray-900 rounded-lg transition duration-300 hover:bg-sky-400">
+          Learn More -->
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-[#161b22] border-t border-[#21262d] fade-section">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 border-b pb-12 border-[#21262d]">
+    <div>
+      <h5 class="text-2xl font-bold mb-4">Engagement</h5>
+      <p class="text-gray-400">We are seeking strategic partners and investors to expand clean mobility projects across Australia.</p>
+    </div>
+    <div class="md:col-span-2 space-y-4">
+      <h5 class="text-2xl font-bold mb-4 text-accent">Connect with Endurance Solutions</h5>
+      <p class="text-lg"><span class="font-medium text-gray-400">Email:</span> 
+        <a href="mailto:mario.grech22@gmail.com" class="text-white hover:text-accent ml-2">mario.grech22@gmail.com</a></p>
+      <p class="text-lg"><span class="font-medium text-gray-400">Phone:</span> 
+        <a href="tel:+61452192290" class="text-white hover:text-accent ml-2">+61 452 192 290</a></p>
+      <p class="text-lg">
+        <span class="font-medium text-gray-400">Locations:</span>
+        <span class="text-white ml-2">Sydney, Australia | Telok Ayer, Singapore</span></p> 
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto pt-6 text-center text-sm text-gray-500">
+    &copy; 2025 Endurance Solutions. All Rights Reserved.
+  </div>
+</section>
+
+<!-- JavaScript: Scroll Animations -->
+<script>
+  // Header fade-in on scroll
+  const header = document.querySelector('header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+
+  // Fade + scale sections on scroll
+  const sections = document.querySelectorAll('.fade-section');
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
